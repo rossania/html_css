@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+body{
+    background-color: #F5D5BD;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+h1{
+    color: #F54838;
+}
+h1#principal {
+    text-align: center;
+    background-color: #F5938A;
+}
+
+
+.basico{
+
+    color: #F53874;
+}
+
+.intermediario{
+    color: #c91f10;
+
+}
+
+.avancado{
+    color: #3201F5;
+
+}

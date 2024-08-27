@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Usando imagens dinâmicas</h1>
+    <p>Vamos aperender a deixar a imagem dinâmica para os dispositivos.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/fotopq.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/fotomd.png" type="image/png">
+        <img src="imagens/fotogd.png" alt="imagem grande">
+    </picture>
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir audio.</p>
+    <audio src="midia/happy-mistake.mp3" controls autoplay></audio>
+    <p>Vamos ouvir um podcast</p>
+    <audio preload="auto" autoplay controls>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+    </audio>
+    <h1>Reproduzindo video</h1>
+    <p>Vamos reproduzir um video</p>
+    <video controls width="500">
+        <source src="midiavideo/8298048-uhd_3840_2160_30fps.mp4" type="video/mp4">
+    </video>
+    <p>Vamos reproduzur video de hospedagem externa</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/onfQsfIDyRo?si=uVFQF_Zobdth0Jtk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+</body>
+</html>

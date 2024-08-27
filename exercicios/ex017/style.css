@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+div{
+    display: inline-block;
+    background-color: #F5E138;
+    text-align: center;
+    border: 2px;
+    height: 250px;
+    width: 300px;
+
+}
+
+div:hover{
+    background-color: blueviolet;
+}
