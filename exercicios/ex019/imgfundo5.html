@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container {
+            background-image: url(imagens/target001.png); /* Define a imagem de fundo como a imagem 'target001.png' localizada na pasta 'imagens'. */
+
+            background-size: 100% 100%; /* Faz com que a imagem se ajuste ao tamanho total do elemento, tanto na largura quanto na altura. A imagem será esticada ou comprimida para preencher todo o espaço disponível. */
+
+            position: relative; /* Define o posicionamento do elemento como relativo. Isso significa que o elemento será posicionado em relação à sua posição normal no fluxo do documento.As propriedades `top`, `bottom`, `left` e `right` serão usadas para ajustar a posição do elemento em relação à sua posição original. */
+
+            height: 94vh;/* Define a altura do elemento como 94% da altura da viewport (janela do navegador). */
+
+            padding: 10px; /* Adiciona um espaço interno de 10 pixels em todos os lados do elemento (topo, direita, baixo e esquerda). Esse espaço interno cria uma margem entre o conteúdo do elemento e suas bordas. */
+
+            background-color: blue; /* Define a cor de fundo do elemento como azul. Essa cor será visível nas áreas onde a imagem de fundo não cobre completamente o elemento. */
+
+        }
+        #conteudo{
+            
+            background-image: url(imagens/target001.png); /* Define a imagem de fundo como a imagem 'target001.png' localizada na pasta 'imagens'. */
+            background-size: 100% 100%; /* Faz com que a imagem se ajuste ao tamanho total do elemento, tanto na largura quanto na altura. */
+            position: absolute; /* Posiciona o elemento de forma absoluta em relação ao seu elemento pai, permitindo um posicionamento preciso. */
+            height: 200px; /* Define a altura do elemento em 200 pixels. */
+            width: 400px; /* Define a largura do elemento em 400 pixels. */
+            background-color: chartreuse; /* Define a cor de fundo do elemento como verde chartreuse. */
+            left: 50%; /* Posiciona o lado esquerdo do elemento a 50% da largura do elemento pai. */
+            top: 50%; /* Posiciona o topo do elemento a 50% da altura do elemento pai. */
+            transform: translate(-50%, -50%); /* Desloca o elemento em 50% para a esquerda e 50% para cima, centralizando-o em relação às suas novas posições 'left' e 'top'. */
+            
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo"></article>
+    </section>
+</body>
+</html>
