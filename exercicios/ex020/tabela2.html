@@ -11,24 +11,25 @@
         }
         table{
             width: 400px;
+            height: 400px;
             border-collapse: collapse; /* Esta propriedade define como as bordas de uma tabela devem ser renderizadas.Quando definida como 'collapse', as bordas das células adjacentes se fundem, criando uma única borda contínua ao redor do grupo de células. Isso resulta em uma tabela com uma aparência mais limpa e profissional. */
             /*border-collapse: separate;: (Valor padrão) Cada célula terá sua própria borda, e haverá um espaço entre elas.*/
             border: 2px solid red;
         }
-        tr.linha{
-            background-color: dimgray;
-        }
+
+        
         td{
             border: 1px solid black;
             padding: 8px;
+            text-align: center;/* Esta propriedade define como o texto dentro de um elemento de bloco é alinhado horizontalmente. O valor 'center' centraliza o texto em relação à largura do elemento. */
+
+            vertical-align: top;/* Esta propriedade define o alinhamento vertical do conteúdo dentro de uma célula de tabela ou de um elemento inline. O valor 'top' alinha o conteúdo na parte superior da linha ou célula. */
         }
-        td.dados{
-            background-color: blueviolet;
-        }
+        
     </style>
 </head>
 <body>
-    <h1> PRIMEIRA TABELA</h1>
+    <h1> Alinhamentos</h1>
     <!--Hierarquia de tabelas
     table = tabela
         Table row = linas de tabela
@@ -40,7 +41,7 @@
             <td>B1</td>
             <td>C1</td>
         </tr>
-        <tr class="linha"> <!--segunda linha-->
+        <tr> <!--segunda linha-->
             <td>A2</td>
             <td>B2</td>
             <td>C2</td>
@@ -48,7 +49,7 @@
         <tr><!--terceira linha-->
             <td>A3</td>
             <td>B3</td>
-            <td class="dados">C3</td>
+            <td>C3</td>
         </tr>
         <tr> <!--quarta linha-->
             <td>A4</td>
