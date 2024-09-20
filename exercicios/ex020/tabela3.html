@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>tabelas grandes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 5px;
+        }
+        table{
+            border: 2px solid red;
+            border-collapse: collapse;
+            width: 500px;
+            position: relative;
+        }
+        
+        th,td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .numero{
+            text-align: right;
+        }
+
+        thead > tr > th{
+            position: sticky;/*elemento se tornará fixo no topo da viewport, criando um efeito de cabeçalho fixo.*/
+            top: -1px;
+            background-color: grey;
+        }
+        tbody > tr:nth-child(2n){/* pode ser (odd)que   é impar, (even)que é par e (2n-1)que vai ser referente ao impar*/
+            background-color: yellow;/*Este código CSS seleciona todas as linhas (tr) que são filhas diretas do elemento <tbody> e que ocupam uma posição par (2n) entre seus irmãos.
+            * tbody: Seleciona o elemento <tbody>, que geralmente contém as linhas de dados de uma tabela.
+            * >: Seleciona apenas os filhos diretos do elemento <tbody>, ignorando os netos.
+            * tr: Seleciona todas as linhas (<tr>) dentro do <tbody>.
+            * :nth-child(2n): Seleciona todos os elementos que são o segundo filho, quarto filho, sexto filho, e assim por diante (posições pares).
+  
+            O resultado é que todas as linhas pares da tabela terão um fundo amarelo.
+*/
+        }
+        thead, tfoot{
+            background-color: grey;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Utilizando tabelas grandes</h1>
+    <!--Anatomia para tabelas grandes
+        CAPITION
+        THEAD
+            tr, td, th
+        TBODY
+            tr, td, th
+        TFOOT
+            tr, td, th-->
+    
+    <table>
+        <caption>População do Rio Grande do Sul</caption>
+        <thead>
+            <tr>
+                <th scope="col">Cidade</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Porto Alegre</td>
+                <td class="numero">1 332 570</td>
+             </tr>
+            <tr>
+                <td>Caxias do Sul</td>
+                <td class="numero">463 338</td>
+            </tr>
+            <tr>
+                <td>Canoas</td>	
+                <td class="numero">347 657</td>
+            </tr>
+            <tr>
+                <td>Pelotas</td>	
+                <td class="numero">325 689</td>
+            </tr>
+            <tr>
+                <td>Santa Maria</td>	
+                <td class="numero">271 633</td>
+            </tr>
+            <tr>
+                <td>Gravataí</td>	
+                <td class="numero">265 070</td>
+            </tr>
+            <tr>
+                <td>Novo Hamburgo</td>	
+                <td class="numero">227 732</td>
+            </tr>
+            <tr>
+                <td>Viamão</td>	
+                <td class="numero">224 116</td>
+            </tr>
+            <tr>
+                <td>São Leopoldo</td>	
+                <td class="numero">217 410</td>
+            </tr>
+            <tr>
+                <td>Passo Fundo</td>	
+                <td class="numero">206 224</td>
+            </tr>
+            <tr>
+                <td>Rio Grande</td>	
+                <td class="numero">191 900</td>
+            </tr>
+            <tr>
+                <td>Alvorada</td>	
+                <td class="numero">187 315</td>
+            </tr>
+            <tr>
+                <td>Cachoeirinha</td>	
+                <td class="numero">136 258</td>
+            </tr>
+            <tr>
+                <td>Santa Cruz do Sul</td>	
+                <td class="numero">133 230</td>
+            </tr>
+            <tr>
+                <td>Sapucaia do Sul</td>	
+                <td class="numero">132 107</td>
+            </tr>
+            <tr>
+                <td>Bento Gonçalves</td>	
+                <td class="numero">123 151</td>
+            </tr>
+            <tr>
+                <td>Bagé</td>	
+                <td class="numero">117 938</td>
+            </tr>
+            <tr>
+                <td>Uruguaiana</td>	
+                <td class="numero">117 210</td>
+            </tr>
+            <tr>
+                <td>Erechim</td>	
+                <td class="numero">105 705</td>
+            </tr>
+            <tr> 
+                <td>Lajeado</td>	
+                <td class="numero">93 646</td>
+            </tr>
+            <tr>
+                <td>Guaíba Guaíba</td>	
+                <td class="numero">92 924</td>
+            </tr>
+        	<tr>
+                <td>Ijuí</td>	
+                <td class="numero">84 726</td>
+            </tr>
+            <tr>
+                <td>Santana do Livramento</td>	
+                <td class="numero">84 421</td>
+            </tr>
+            <tr> 
+                <td>Cachoeira do Sul</td>	
+                <td class="numero">80 070</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total</th>
+                <td class="numero">0000000</td>
+            </tr>
+
+        </tfoot>
+    </table>
+</body>
+</html>
