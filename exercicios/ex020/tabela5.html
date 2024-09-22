@@ -14,9 +14,12 @@
             border-collapse: collapse;
 
         }
+        caption{
+            font-weight: bold;
+            padding: 10px;
+        }
         
-        
-        th, tr, td{
+        th, td{
             border: 1px solid black;
             padding: 10px;
         }
@@ -29,13 +32,13 @@
     <table>
         <caption> Tabela de músicas</caption>
         <thead>
-            <th>Grupos</th>
-            <th>Nomes</th>
-            <th colspan="3n">Músicas</th>
+            <th scope="col">Grupos</th>
+            <th scope="col">Nomes</th>
+            <th colspan="3n" scope="colgroup">Músicas</th>
         </thead>
         <tbody>
             <tr>
-                <th rowspan="3">Mulheres</th>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
                 <td>Maria Soares</td>
                 <td>Skank</td>
                 <td>samba</td>
@@ -59,7 +62,7 @@
                 
             </tr>
             <tr>
-                <th rowspan="3">Homens</th>
+                <th rowspan="3" scope="rowgroup">Homens</th>
                 <td>João Silva</td>
                 <td>pagode</td>
                 <td>pericles</td>

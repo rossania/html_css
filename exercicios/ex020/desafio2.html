@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Desafio tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif
+        }
+        table{
+            width: 800px;
+            border-collapse: collapse;
+
+        }
+        thead{
+            background-color: dimgray;
+        }
+        
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .media{
+            background-color: dimgray;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Alunos</th>
+                <th rowspan="2">Disciplina</th>
+                <th colspan="2n">Notas</th>
+                <th rowspan="2">Média</th>
+            </tr>
+            <tr>
+                <th>Nota 1</th>
+                <th>Nota 2</th>
+            </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th rowspan="4">Exatas</th>
+            <td>matematica</td>
+            <td>00</td>
+            <td>00</td>
+            <td>00</td>
+        </tr>
+        <tr>
+            <td>fisica </td>
+            <td>00</td>
+            <td>00</td>
+            <td>00</td> 
+        </tr>
+        <tr>
+            <td>química</td>
+            <td>00</td>
+            <td>00</td>
+            <td>00</td>
+        </tr>
+        <tr>
+            <td>biologia</td>
+            <td>00</td>
+            <td>00</td>
+            <td>00</td>
+        </tr>
+        <tr class="media">
+            <th colspan="4n">Média de exatas</th>
+            <td>00</td>
+        </tr>
+        <tr></tr>
+            <th rowspan="2">Humanas</th>
+            <td>história</td>
+            <td>00</td>
+            <td>00</td>
+            <td>00</td>
+        </tr>
+        <tr>
+            <td>geografia </td>
+            <td>00</td>
+            <td>00</td>
+            <td>00</td> 
+        </tr>
+        <tr class="media">
+            <th colspan="4n">Média de humanas</th>
+            <td>00</td>
+        </tr>
+    </tbody>
+
+    </table>
+</body>
+</html>
